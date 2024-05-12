@@ -3,9 +3,10 @@ const app = express()
 const path = require('path')
 const fs = require('fs')
 const cors = require('cors')
+
 app.use(cors({
-  origin: 'https://anonymous-chart-ver-2.onrender.com'
-}));
+    origin : "*"
+}))
 
 const data = require('./public/data.json')
 
